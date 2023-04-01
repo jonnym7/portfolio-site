@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Jon Mahon's Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="author" content="Jon Mahon"/>
+    <meta name="keywords" content="portfolio, html, CSS, Javascript"/>
+    <meta name="description" content="This is the portfolio site for Jon Mahon"/>
+</head>
+<body>
+
+    <header>
+        <h1>Jon Mahon</h1>
+    </header>
+
+    <section>
+        <h2>Welcome to my portfolio</h2>
+    </section>
+
+    <div name="hero">
+        <img src="https://avatars.githubusercontent.com/u/127800021?v=4" alt="A photo of Jon Mahon">
+    </div>
+
+    <div name="navigation">
+        <h3>Navigation:</h3>
+        <ul>
+            <li><a href="">Work</a></li>
+            <li><a href="https://jonathon-mahon.myportfolio.com/">Design Portfolio</a></li>
+            <li><a href="">About Me</a></li>
+            <li><a href="https://www.linkedin.com/in/jonmahon/">Linkedin</a></li>
+            <li><a href="https://github.com/jonnym7">GitHub</a></li>
+            <li><a href="">Contact</a></li>
+        </ul>
+    </div>
+
+    <div name="about me">
+        <h3>About Me</h3>
+        <p>I am a trained marketing professional who has migrated my way into graphic design and web development. This type of cross-functional experience has led me to operate in content creation and management, social media, marketing strategy and branding and website management. I have a passion for figuring out new ways to create awareness and managing the visual identity of a brand. That passion has most recently led me to participate in Stack Education's Web Development Certificate program.<br>
+        <br>
+        I have created websites, logos, infographics, eBooks, whitepapers, sales collateral, lead generation programs, and social media strategies for brands across numerous industries. I enjoy being challenged, being creative and constantly having new things to tackle and am always on the lookout for my next professional adventure.</p>
+    </div>
+
+    <div name="contact me">
+        <h3>Contact Me</h3>
+        <form action="/api/contact" method="POST">
+            <div>
+                <label for="first-name">First Name:</label>
+                <input 
+                    type="text" 
+                    name="first-name" 
+                    id="first-name"
+                />
+            </div>
+            <div>
+                <label for="last-name">Last Name:</label>
+                <input 
+                    type="text" 
+                    name="last-name" 
+                    id="last-name"
+                />
+            </div>
+            <div>
+                <label for="email">Email Address:</label>
+                <input 
+                    type="email" 
+                    name="email" 
+                    id="email"
+                />
+            </div>
+            <div>
+                <label for="phone-number">Phone Number:</label>
+                <input 
+                    type="number" 
+                    name="phone-number" 
+                    id="phone-number"
+                />
+            </div>
+            <div>
+                <p>Preferred Response Method?</p>
+                <label for="phone">Phone</label>
+                <input 
+                    type="radio" 
+                    name="preferredResponse" 
+                    id="phone"
+                    value="phone"
+                />
+                <label for="email">Email</label>
+                <input 
+                    type="radio" 
+                    name="preferredResponse" 
+                    id="email" 
+                    value="email"
+                />
+            </div>
+            <div>
+                <label for="Message">Message:</label>
+                <textarea 
+                    name="message" 
+                    id="message" 
+                    cols="30" 
+                    rows="5"></textarea>
+            </div>
+            <div>
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+
+    </div>
+
+</body>
+
+</html>
