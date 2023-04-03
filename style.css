@@ -1,0 +1,86 @@
+@font-face {
+    font-family: "Exo2LightItalic";
+    src: url(fonts/exo2/Exo2-LightItalic.ttf) format('truetype');
+}
+@font-face {
+    font-family: "RobotoLight";
+    src: url(fonts/roboto/Roboto-Light.ttf) format('truetype');
+    font-weight: lighter;
+}
+
+body {
+    background: rgb(16,15,20);
+    background: linear-gradient(160deg, #000 28%, #0c1821 80%, #1b2a41 100%);
+    font-family: RobotoLight;
+    color: #e7e7e7;
+    
+}
+
+a {
+    color: #368f8b;
+}
+
+/*  Navigation Menu  */
+
+.top-nav{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(5rem, max-content));
+    justify-content: space-evenly;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.top-nav a{
+    float: left;
+    padding: .5rem;
+    text-decoration: none;
+    font-size: 18px;
+    text-align: center;
+}
+
+.top-nav a:hover{
+    background-color: #368f8b;
+    color: black;
+}
+
+/*  Hero Section  */
+
+.hero{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem 4rem;
+}
+
+.hero-title{
+    font-family: Exo2LightItalic;
+    font-size: 3vw;
+    font-style: italic;
+    text-align: right;
+    max-width: 100%;
+}
+
+.hero-image{
+    display: flex;
+    justify-content: center;
+}
+
+.hero-image img{
+    border-radius: 50%;
+    max-width: 100%;
+    border: solid .5rem #1b2a41;
+}
+
+.hero-subtitle{
+    font-family: Exo2LightItalic;
+    font-size: 1.5vw;
+    font-style: italic;
+}
+
+/* Body Section(s)  */
+
+.about-me{
+    padding: 4rem;
+}
